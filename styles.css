@@ -244,10 +244,12 @@ footer {
     align-items: center;
     gap: 1.2rem;
   }
+@media (max-width: 900px) {
   main {
-    padding: 0 0.5rem;
+    padding: 0 1rem;
   }
   form {
     padding: 1.5rem 0.7rem;
   }
+  
 }
