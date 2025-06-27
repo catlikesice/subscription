@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Subscribe Now - Your Service</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #0056b3;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .pricing {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+    }
+    .plan {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      flex: 1 1 250px;
+      max-width: 300px;
+      text-align: center;
+    }
+    .plan h3 {
+      margin-top: 0;
+      color: #0056b3;
+    }
+    .plan p.price {
+      font-size: 2rem;
+      margin: 1rem 0;
+      color: #007bff;
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      max-width: 400px;
+      margin: 0 auto 3rem auto;
+    }
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    form input, form select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background: #0056b3;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    form button:hover {
+      background: #003d80;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Subscription Service</h1>
+    <p>Choose your plan and enjoy exclusive benefits</p>
+  </header>
+  <main>
+    <section class="pricing">
+      <div class="plan">
+        <h3>Basic</h3>
+        <p class="price">$5 / month</p>
+        <p>Access to basic features</p>
+      </div>
+      <div class="plan">
+        <h3>Standard</h3>
+        <p class="price">$15 / month</p>
+        <p>Includes Basic + premium content</p>
+      </div>
+      <div class="plan">
+        <h3>Premium</h3>
+        <p class="price">$30 / month</p>
+        <p>All features + priority support</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Subscribe Now</h2>
+      <form id="subscriptionForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="plan">Choose Plan</label>
+        <select id="plan" name="plan" required>
+          <option value="">Select a plan</option>
+          <option value="basic">Basic - $5/month</option>
+          <option value="standard">Standard - $15/month</option>
+          <option value="premium">Premium - $30/month</option>
+        </select>
+
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Your Subscription Service. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('subscriptionForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for subscribing! (This is a demo form.)');
+      // Here you would add integration with payment gateway and backend
+    });
+  </script>
+</body>
+</html>
