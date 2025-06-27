@@ -7,12 +7,22 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-brand">Your Service</a>
+      <ul class="navbar-menu">
+        <li><a href="#subscribe">Subscribe</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
   <header>
     <h1>Your Subscription Service</h1>
     <p>Choose your plan and enjoy exclusive benefits</p>
   </header>
   <main>
-    <section class="pricing">
+    <section class="pricing" id="pricing">
       <div class="plan">
         <h3>Basic</h3>
         <p class="price">$5 / month</p>
@@ -30,7 +40,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="subscribe">
       <h2>Subscribe Now</h2>
       <form id="subscriptionForm">
         <label for="name">Full Name</label>
@@ -50,9 +60,16 @@
         <button type="submit">Subscribe</button>
       </form>
     </section>
+
+    <!-- Example Articles Section Header -->
+    <section id="articles">
+      <h2>Articles</h2>
+      <!-- Articles content would go here -->
+    </section>
   </main>
   <footer>
     &copy; 2025 Your Subscription Service. All rights reserved.
+    <span id="contact"></span>
   </footer>
 
   <script>
